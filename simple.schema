@@ -1,0 +1,9 @@
+{
+    "type": "record",
+    "name": "Order", "namespace":"org.apache.camel.avro",
+    "fields": [
+        {"name": "customerId", "type": {"type": "long"}},
+        {"name": "orderId", "type": "long"},
+ 		{"name": "orderItems", "type": ["null", {"type": "map", "items": "bytes"}]}
+ ]
+}

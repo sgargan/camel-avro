@@ -1,0 +1,46 @@
+{
+  "namespace":"org.apache.camel.avro.dataformat.generated",
+  "protocol": "OrderingProcessingService",
+  "doc": "Protocol to submit customer Orders",
+  "types": [    
+ 	{
+      "name": "Item", "type": "record",
+      "fields": [
+        {"name": "name", "type": "string"},
+        {"name": "sku", "type": "long"},
+ 		{"name": "quantity", "type": "int"}
+ 	  ]
+ 	},
+ 	{
+      "name": "Order", "type": "record",
+      "fields": [
+        {"name": "customerId", "type": "long"},
+        {"name": "orderId", "type": "long"},
+ 		{"name": "orderItems", "type": ["null", {"type": "map", "values": "Item"}]}
+ 	  ]
+ 	},
+ 	{
+      "name": "Confirmation", "type": "record",
+      "fields": [
+        {"name": "customerId", "type": {"type": "long"}},
+        {"name": "orderId", "type": "long"},
+ 		{"name": "estimatedCompletion", "type": "long"}]}
+ 	  ]
+ 	},
+ 	{
+      "name": "OrderFailure", "type": "error",
+      "fields": [
+      	{"name": "message", "type": "string"}
+      ]}
+ 	} 	
+   ],
+    
+   "messages": {
+     "report": {
+	   "doc": "Submit an Order",
+	   "request": [{"name": "sumbitOrder", "type": "Order"}],
+	   "response": "Confirmation"
+	   "errors": ["OrderFailure"]
+	 }
+   }
+}

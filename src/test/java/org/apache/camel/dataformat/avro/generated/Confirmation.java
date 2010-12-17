@@ -7,7 +7,7 @@ package org.apache.camel.dataformat.avro.generated;
 
 @SuppressWarnings("all")
 public class Confirmation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = org.apache.avro.Schema.parse("{\"type\":\"record\",\"name\":\"Confirmation\",\"namespace\":\"org.apache.camel.avro.generated\",\"fields\":[{\"name\":\"customerId\",\"type\":\"long\"},{\"name\":\"orderId\",\"type\":\"long\"},{\"name\":\"estimatedCompletion\",\"type\":\"long\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = org.apache.avro.Schema.parse("{\"type\":\"record\",\"name\":\"Confirmation\",\"namespace\":\"org.apache.camel.dataformat.avro.generated\",\"fields\":[{\"name\":\"customerId\",\"type\":\"long\"},{\"name\":\"orderId\",\"type\":\"long\"},{\"name\":\"estimatedCompletion\",\"type\":\"long\"}]}");
   public long customerId;
   public long orderId;
   public long estimatedCompletion;

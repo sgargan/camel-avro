@@ -16,6 +16,7 @@
  */
 package org.apache.camel.dataformat.avro;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.apache.avro.Schema;
@@ -23,7 +24,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.dataformat.avro.generated.Item;
 import org.apache.camel.dataformat.avro.generated.Order;
-import org.apache.camel.dataformat.avro.generated.OrderingProcessingService;
+import org.apache.camel.dataformat.avro.generated.OrderProcessingService;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
@@ -34,7 +35,7 @@ public class AvroDataFormatTest extends CamelTestSupport {
         return new RouteBuilder() {
             @Override
             public void configure() throws Exception {
-                Schema schema = OrderingProcessingService.PROTOCOL.getTypes().iterator().next();
+                Schema schema = Schema.createUnion(new ArrayList(OrderProcessingService.PROTOCOL.getTypes()));
                 AvroDataFormat format = new AvroDataFormat(schema);
                 from("direct:roundtrip").marshal(format).unmarshal(format).to("mock:result");
             }

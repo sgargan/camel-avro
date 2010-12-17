@@ -36,7 +36,6 @@ public class AvroDataFormat implements DataFormat {
 
     private Schema schema;
 
-
     public AvroDataFormat(Schema schema) {
        this.schema = schema;
     }

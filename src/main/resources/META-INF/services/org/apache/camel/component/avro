@@ -15,4 +15,4 @@
 # limitations under the License.
 #
 
-class=org.apache.camel.components.AvroComponent
+class=org.apache.camel.component.avro.AvroComponent

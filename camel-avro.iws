@@ -1,0 +1,2616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92ffeef7-027c-46c1-acb0-17c975a6e5fc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/NettyServer.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/NettyServer.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/NettyTransceiver.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/NettyTransceiver.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Requestor.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Requestor.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/SocketServer.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/SocketServer.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/RPCMetaTestPlugin.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/RPCMetaTestPlugin.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolDatagram.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolDatagram.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGenericMeta.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGenericMeta.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolHttp.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolHttp.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolSpecific.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolSpecific.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolSpecificMeta.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolSpecificMeta.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/ipc/TestLocalTransceiver.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/ipc/TestLocalTransceiver.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/ipc/TestNettyServer.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/ipc/TestNettyServer.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyServer.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyServer.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyTransceiver.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyTransceiver.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Requestor.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Requestor.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Responder.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Responder.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/ResponderServlet.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/ResponderServlet.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolDatagram.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolDatagram.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolHttp.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolHttp.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolSpecific.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolSpecific.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolSpecificMeta.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolSpecificMeta.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestLocalTransceiver.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestLocalTransceiver.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestNettyServer.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestNettyServer.java" />
+      <change type="MODIFICATION" beforePath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/TestStatsPluginAndServlet.java" afterPath="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/TestStatsPluginAndServlet.java" />
+    </list>
+    <ignored path="camel-avro.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/AvroTypeConverter.java" line="39" class="org.apache.camel.component.avro.AvroTypeConverter" package="org.apache.camel.component.avro">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/HeaderPackagingPlugin.java" line="44" class="org.apache.camel.component.avro.HeaderPackagingPlugin" package="org.apache.camel.component.avro">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGeneric.java" line="196" class="org.apache.avro.TestProtocolGeneric" package="org.apache.avro">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/RPCMetaTestPlugin.java" line="116" class="org.apache.avro.RPCMetaTestPlugin" package="org.apache.avro">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_any>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="camel-avro" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="TestProtocolGenericMeta.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGenericMeta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="51" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestProtocolGeneric.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGeneric.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="139" column="139" selection-start="4836" selection-end="4836" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParentRunner.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/runners/ParentRunner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="16" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-6.12">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JUnitCore.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/runner/JUnitCore.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="35" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunAfters.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/internal/runners/statements/RunAfters.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="16" selection-start="615" selection-end="615" vertical-scroll-proportion="-6.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RPCMetaTestPlugin.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/RPCMetaTestPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="0" selection-start="4144" selection-end="4144" vertical-scroll-proportion="0.33266532">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Responder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Responder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="0" selection-start="4708" selection-end="4708" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/SocketServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="57" selection-start="3867" selection-end="3867" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Requestor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Requestor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="84" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="String.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="61" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/transport/SocketTransportProvider.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/camel/component/avro/JettyToAvroTest.java" />
+        <option value="$M2_REPO$/org/apache/avro/avro/1.5.0-SNAPSHOT/avro-1.5.0-SNAPSHOT.jar!/org/apache/avro/ipc/HandshakeMatch.class" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/CamelDelegatingResponder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/camel/component/avro/AvroNettyTransportTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/camel/component/avro/AbstractAvroTransportTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/AvroComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/AvroLocalProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/AvroProducer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/camel/component/avro/AvroHeaderForwardingTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/AvroCamelResponder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/HeaderPackagingPlugin.java" />
+        <option value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolHttp.java" />
+        <option value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGenericMeta.java" />
+        <option value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Requestor.java" />
+        <option value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/RPCMetaTestPlugin.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../build/apache-maven/" />
+        <option name="mavenSettingsFile" value="$PROJECT_DIR$/../../../../../build/apache-maven/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
+  </component>
+  <component name="ModuleEditorState">
+    <option name="LAST_EDITED_MODULE_NAME" />
+    <option name="LAST_EDITED_TAB_NAME" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id>Inspections</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ipc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ipc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="camel-avro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.apache.camel.component.avro" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestProtocolGenericMeta">
+    <configuration default="false" name="AvroHeaderForwardingTest.testHeaderTransmission" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="camel-avro" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="org.apache.camel.component.avro" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.camel.component.avro.AvroHeaderForwardingTest" />
+      <option name="METHOD_NAME" value="testHeaderTransmission" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="42019" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestDataFile.testGenericAppend" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Avro" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.avro" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.avro.TestDataFile" />
+      <option name="METHOD_NAME" value="testGenericAppend" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestDataFile" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Avro" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.avro" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.avro.TestDataFile" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestProtocolHttp" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Avro" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.apache.avro" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.avro.TestProtocolHttp" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestProtocolGenericMeta" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Avro" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="org.apache.avro" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.avro.TestProtocolGenericMeta" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="46083" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpecsRunConfiguration" factoryName="Specs">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="packagepath" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="sysFilter" value=".*" />
+      <setting name="exampleFilter" value=".*" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="version" value="false" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AvroHeaderForwardingTest.testHeaderTransmission" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestDataFile.testGenericAppend" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestDataFile" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestProtocolHttp" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestProtocolGenericMeta" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="UPDATE_RUN_STATUS" value="false" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/mr_events.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/templates" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/Union.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/simple.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/ResolvingGrammarGenerator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/generic" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestReflect.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/TestWeather.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/GenerateBlockingData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/JsonEncoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/SeekableInput.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroWrapper.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/mr_events.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/ReflectDatumWriter.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/templates/traceinput.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestBinaryDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/protovis-r3.2.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/NullCodec.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherRecordReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/AvroTestUtil.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericEnumSymbol.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/StaticServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestNamespaceSpecific.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/Util.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/TestWordCount.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/InMemorySpanStorage.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestNettyServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestBlockingIO2.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificRecordBase.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/RecodecTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/util/Utf8.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/FakeTicks.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/util" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/RPCPlugin.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/g.bar.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/doc-files" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/ValidatingDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/unicode.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherOutputService.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherMapRunner.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/unicode.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/tether/TetherTaskRunner.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/StatsPluginOverhead.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/tool/TestRpcReceiveAndSendTools.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestEncoders.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolGeneric.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestNamespaceReflect.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/DatumWriter.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates/java/classic/protocol.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/overview.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/Protocol.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestDataFile.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/import.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestDataFileConcat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/bin/gen_rpc_interop.sh" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/SimpleException.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/HttpTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates/java/classic" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/templates" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/jquery-1.4.2.min.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/avro.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/ValidatingEncoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/HadoopCombiner.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/avro.css" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificDatumWriter.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/reservedwords.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/jquery.tipsy.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/generic/TestGenericDatumWriter.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericDatumReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/FileSpanStorage.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/tool/TestJsonToFromBinaryFragmentTools.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/templates/statsview.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/file" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/BlockingBinaryEncoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestSchema.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/SequenceFileRecordReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherPartitioner.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericContainer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/SchemaParseException.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/interop.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/DataFileWriteTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/Decoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/TestSequenceFileReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/JsonToBinaryFragmentTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/templates/common.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolReflect.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/ResolvingDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/HadoopReducerBase.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/idl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/bin/test_tools.sh" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/specific/TestSpecificCompiler.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/tool" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/WordCountUtil.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/idl/TestIdl.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestDataFileDeflate.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/ValidatingGrammarGenerator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificExceptionBase.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/interop.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/ParsingEncoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/SaslSocketTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherOutputFormat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/Util.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolParsing.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/BinaryEncoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Transceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/parsing/TestResolvingGrammarGenerator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroKey.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/SocketServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/RPCContext.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/DeflateCodec.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/tool/TestMain.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Server.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/IdlTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/Tool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/ReflectResponder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/AvroRemoteException.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates/java/classic/enum.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/DirectBinaryDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestTracingUtil.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/DataFileGetSchemaTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestFileSpanStorage.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates/java/classic/fixed.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroReducer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/AvroTypeException.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/ResponderServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolReflectMeta.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/DatumReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/templates/node.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroKeyComparator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/Schema.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/Pair.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/bin" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetheredProcess.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestResolvingIOResolving.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/BarRecord.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/TestHistogram.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroValue.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/bar.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroRecordReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/SeekableFileInput.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/specific/Avro14SpecificCompiler.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates/java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/foo.avsc" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/TracePlugin.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/static/g.bar.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/SaslSocketServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/StatsServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificRecord.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestBulkData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestSpanTraceFormation.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/TraceClientServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolHttp.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/tether/TetherTask.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/InduceSchemaTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherKeyComparator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/templates/java/classic/record.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/FsInput.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestDataFileMeta.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroInputFormat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/doc-files/parsing.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificRequestor.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/FloatHistogram.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SchemaTask.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/idl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/ParsingDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/JsonGrammarGenerator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/import.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/specific/TestTemplatedCompilerFidelity.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/Main.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/ReflectDatumReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/IndexedRecord.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/HadoopMapper.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/LocalTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroSerialization.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/static/protovis-r3.2.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/SingletonTestingTracePlugin.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/tether/WordCountTask.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/Parser.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestBlockingIO.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/DatagramTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestTraceCollection.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestStaticServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/IntegerHistogram.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolSpecific.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericResponder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/ByteBufferOutputStream.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestBasicTracing.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/ReflectData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificFixed.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/FileReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/TraceNode.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolDatagram.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/simple.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/util/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericArray.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/generic/TestGenericData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/Histogram.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/TraceCollection.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/util/TestUtf8.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/checkstyle.xml" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestSpanAggregation.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/DataFileWriter.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/Perf.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherKeySerialization.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericDatumWriter.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroJob.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericFixed.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherJob.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroMapper.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/templates/overview.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/ReflectRequestor.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestSaslDigestMd5.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Responder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/Trace.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolSpecificMeta.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/SocketTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestProtocolGenericMeta.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/FromTextTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/specific/TestSpecificData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/DataFileConstants.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/BinaryFragmentToJsonTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/static/jquery.tipsy.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/TestStatsPluginAndServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/DataFileReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/Codec.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/StatsServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/BinaryDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/Encoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/specific" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestDataFileReflect.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestValidatingIO.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/RpcReceiveTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherInputFormat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/output/namespaces.avpr" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/file/TestLengthLimitedInputStream.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/tipsy.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericRecord.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/SpanStorage.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestSaslAnonymous.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/FooRecord.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/util" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/StatsPlugin.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/static/avrotrace.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/RPCMetaTestPlugin.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/HadoopReducer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/static/tipsy.js" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/SkipParser.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/RpcSendTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/templates/collection.vm" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/TestCompare.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/Requestor.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificDatumReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/Stopwatch.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/GenericRequestor.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroOutputFormat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/tool/TestRecodecTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/CodecFactory.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/Nullable.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/tool/TestDataFileTools.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/FixedSize.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/tether/TetherReducer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/TracePluginConfiguration.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificCompiler.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/parsing" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/tether/WordCount.avsc" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/io/TestResolvingIO.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/NoPackage.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/AvroRuntimeException.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/DatagramServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestTraceSingletons.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/TestLocalTransceiver.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroUtf8InputFormat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred/tether" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/JsonDecoder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/SpanAggregator.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/stats/TestStopwatch.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/SequenceFileInputFormat.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/DataFileStream.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/NettyTransportCodec.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/ToTextTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/HttpServer.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/reservedwords.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/DecoderFactory.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/mapred" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/Stringable.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/reflect/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/tool/DataFileReadTool.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/trace/static" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/idl/input/namespaces.avdl" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/StaticServlet.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/AvroCollector.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic/package.html" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/mapred/SequenceFileReader.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/ProtocolTask.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/BinaryData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/io/parsing/Symbol.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/util/WeakIdentityHashMap.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestEndToEndTracing.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/RandomData.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/idl/idl.jj" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/stats/static/tipsy.css" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/ipc/ByteBufferInputStream.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/specific/SpecificResponder.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/file/LengthLimitedInputStream.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test/java/org/apache/avro/ipc/trace/TestTraceConfigurations.java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java/org/apache/avro/generic" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/java" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java/srcbak2/test" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+          <option name="myCopyRoot" value="$FRAMEWORKS$/hadoop/avro/trunk/lang/java" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92ffeef7-027c-46c1-acb0-17c975a6e5fc" name="Default" comment="" />
+      <created>1291966060899</created>
+      <updated>1291966060899</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="24" width="1920" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39867842" sideWeight="0.49812734" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958803" sideWeight="0.6013216" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39867842" sideWeight="0.49812734" order="2" side_tool="true" content_ui="combo" x="13" y="711" width="1869" height="298" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39956093" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" value="svn" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Transceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$M2_REPO$/org/apache/avro/avro/1.5.0-SNAPSHOT/avro-1.5.0-SNAPSHOT-sources.jar!/org/apache/avro/ipc/Requestor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="39" selection-start="3867" selection-end="3867" vertical-scroll-proportion="0.5791583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/camel/component/avro/HeaderPackagingPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/SocketTransceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2296" selection-end="2296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="615" selection-end="615" vertical-scroll-proportion="-6.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="16" selection-start="2206" selection-end="2206" vertical-scroll-proportion="-6.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-6-sun/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="61" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Requestor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="84" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGenericMeta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="51" selection-start="1228" selection-end="1228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/build/test/lib/junit-4.8.1.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="35" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/Responder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="0" selection-start="4708" selection-end="4708" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/java/org/apache/avro/ipc/SocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="57" selection-start="3867" selection-end="3867" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/TestProtocolGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="139" selection-start="4836" selection-end="4836" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$FRAMEWORKS$/hadoop/avro/trunk/lang/java/src/test/java/org/apache/avro/RPCMetaTestPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="0" selection-start="4144" selection-end="4144" vertical-scroll-proportion="0.33266532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Avro</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

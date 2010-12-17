@@ -1,6 +1,6 @@
 {
-  "namespace":"org.apache.camel.avro.dataformat.generated",
-  "protocol": "OrderingProcessingService",
+  "namespace":"org.apache.camel.dataformat.avro.generated",
+  "protocol": "OrderProcessingService",
   "doc": "Protocol to submit customer Orders",
   "types": [    
  	{
@@ -24,22 +24,22 @@
       "fields": [
         {"name": "customerId", "type": {"type": "long"}},
         {"name": "orderId", "type": "long"},
- 		{"name": "estimatedCompletion", "type": "long"}]}
+ 		{"name": "estimatedCompletion", "type": "long"}
  	  ]
  	},
  	{
       "name": "OrderFailure", "type": "error",
       "fields": [
       	{"name": "message", "type": "string"}
-      ]}
+      ]
  	} 	
    ],
     
    "messages": {
-     "report": {
+     "submitOrder": {
 	   "doc": "Submit an Order",
-	   "request": [{"name": "sumbitOrder", "type": "Order"}],
-	   "response": "Confirmation"
+	   "request": [{"name": "order", "type": "Order"}],
+	   "response": "Confirmation",
 	   "errors": ["OrderFailure"]
 	 }
    }

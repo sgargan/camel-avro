@@ -7,7 +7,7 @@ package org.apache.camel.dataformat.avro.generated;
 
 @SuppressWarnings("all")
 public class Item extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  public static final org.apache.avro.Schema SCHEMA$ = org.apache.avro.Schema.parse("{\"type\":\"record\",\"name\":\"Item\",\"namespace\":\"org.apache.camel.avro.generated\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"sku\",\"type\":\"long\"},{\"name\":\"quantity\",\"type\":\"int\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = org.apache.avro.Schema.parse("{\"type\":\"record\",\"name\":\"Item\",\"namespace\":\"org.apache.camel.dataformat.avro.generated\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"sku\",\"type\":\"long\"},{\"name\":\"quantity\",\"type\":\"int\"}]}");
   public java.lang.CharSequence name;
   public long sku;
   public int quantity;

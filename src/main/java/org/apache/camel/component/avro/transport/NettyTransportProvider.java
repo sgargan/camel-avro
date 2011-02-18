@@ -1,17 +1,20 @@
 package org.apache.camel.component.avro.transport;
 
-import org.apache.avro.ipc.*;
-import org.apache.camel.component.avro.AvroConfiguration;
-import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
-
 import java.net.InetSocketAddress;
+
+import org.apache.avro.ipc.NettyServer;
+import org.apache.avro.ipc.NettyTransceiver;
+import org.apache.avro.ipc.Responder;
+import org.apache.avro.ipc.Server;
+import org.apache.avro.ipc.Transceiver;
+import org.apache.camel.component.avro.AvroConfiguration;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class NettyTransportProvider implements TransportProvider {
 
-    private static final org.apache.commons.logging.Log LOG = LogFactory.getLog(NettyTransportProvider.class);
-    
+    private static final Log LOG = LogFactory.getLog(NettyTransportProvider.class);
+
     public String getProviderType() {
         return "netty";
     }

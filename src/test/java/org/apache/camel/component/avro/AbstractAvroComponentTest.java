@@ -18,7 +18,7 @@ package org.apache.camel.component.avro;
 
 import java.util.concurrent.CountDownLatch;
 
-import org.apache.avro.ipc.AvroRemoteException;
+import org.apache.avro.AvroRemoteException;
 import org.apache.avro.ipc.Transceiver;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;

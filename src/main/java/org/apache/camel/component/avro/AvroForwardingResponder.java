@@ -1,24 +1,25 @@
 package org.apache.camel.component.avro;
 
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.List;
+import java.util.Map;
+
 import org.apache.avro.AvroRuntimeException;
 import org.apache.avro.Protocol;
 import org.apache.avro.Protocol.Message;
 import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericDatumReader;
-import org.apache.avro.generic.GenericResponder;
 import org.apache.avro.io.Decoder;
 import org.apache.avro.io.DecoderFactory;
-import org.apache.avro.ipc.ByteBufferInputStream;
 import org.apache.avro.ipc.HandshakeRequest;
 import org.apache.avro.ipc.RPCContext;
 import org.apache.avro.ipc.Transceiver;
+import org.apache.avro.ipc.generic.GenericResponder;
 import org.apache.avro.specific.SpecificDatumReader;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import org.apache.avro.util.ByteBufferInputStream;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.List;
-import java.util.Map;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * <code>AvroForwardingResponder</code> is a preprocessing Responder that

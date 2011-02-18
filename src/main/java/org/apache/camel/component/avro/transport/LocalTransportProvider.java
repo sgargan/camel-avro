@@ -1,5 +1,11 @@
 package org.apache.camel.component.avro.transport;
 
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 import org.apache.avro.ipc.LocalTransceiver;
 import org.apache.avro.ipc.Responder;
 import org.apache.avro.ipc.Server;
@@ -7,19 +13,12 @@ import org.apache.avro.ipc.Transceiver;
 import org.apache.camel.Consumer;
 import org.apache.camel.Producer;
 import org.apache.camel.component.avro.AvroConfiguration;
+import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.Logger;
-import org.eclipse.jetty.util.log.Log;
-
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class LocalTransportProvider implements TransportProvider {
 
-    private static final org.apache.commons.logging.Log LOG = LogFactory.getLog(LocalTransportProvider.class);
+    private static final Log LOG = LogFactory.getLog(LocalTransportProvider.class);
 
     public String getProviderType() {
         return "local";

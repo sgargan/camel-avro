@@ -1,15 +1,20 @@
 package org.apache.camel.component.avro.transport;
 
-import org.apache.avro.ipc.*;
+import java.net.InetSocketAddress;
+
+import org.apache.avro.ipc.Responder;
+import org.apache.avro.ipc.Server;
+import org.apache.avro.ipc.SocketServer;
+import org.apache.avro.ipc.SocketTransceiver;
+import org.apache.avro.ipc.Transceiver;
 import org.apache.camel.component.avro.AvroConfiguration;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import java.net.InetSocketAddress;
-
 public class SocketTransportProvider implements TransportProvider {
 
     private static final Log LOG = LogFactory.getLog(NettyTransportProvider.class);
+    private Server server;
 
     public String getProviderType() {
         return "socket";
@@ -20,7 +25,7 @@ public class SocketTransportProvider implements TransportProvider {
         if (LOG.isDebugEnabled()) {
             LOG.debug("Creating Socket Server on '" + endpointAddress + "'");
         }
-        Server server = new SocketServer(responder, endpointAddress);
+        server = new SocketServer(responder, endpointAddress);
         server.start();
         return server;
     }

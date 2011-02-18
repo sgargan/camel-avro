@@ -10,6 +10,7 @@ import java.net.InetSocketAddress;
 public class DatagramTransportProvider implements TransportProvider {
 
     private static final Log LOG = LogFactory.getLog(DatagramTransportProvider.class);
+    private Server server;
     
     public String getProviderType() {
         return "datagram";
@@ -20,7 +21,7 @@ public class DatagramTransportProvider implements TransportProvider {
         if (LOG.isDebugEnabled()) {
             LOG.debug("Creating Datagram Server on " + endpointAddress);
         }
-        Server server = new DatagramServer(responder, endpointAddress);
+        server = new DatagramServer(responder, endpointAddress);
         server.start();
         return server;
     }
@@ -32,4 +33,6 @@ public class DatagramTransportProvider implements TransportProvider {
         }
         return new DatagramTransceiver(endpointAddress);
     }
+    
+    
 }

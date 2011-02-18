@@ -1,10 +1,10 @@
 package org.apache.camel.component.avro;
 
-import org.apache.avro.Protocol;
-import org.apache.avro.ipc.RPCPlugin;
-
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
+
+import org.apache.avro.Protocol;
+import org.apache.avro.ipc.RPCPlugin;
 
 public class AvroConfiguration {
 

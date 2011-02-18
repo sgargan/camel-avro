@@ -1,14 +1,14 @@
 package org.apache.camel.component.avro;
 
-import org.apache.avro.ipc.ByteBufferInputStream;
-import org.apache.camel.Converter;
-
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.avro.util.ByteBufferInputStream;
+import org.apache.camel.Converter;
 
 @Converter
 public class AvroTypeConverter {

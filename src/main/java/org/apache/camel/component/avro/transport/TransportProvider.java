@@ -22,4 +22,6 @@ public interface TransportProvider {
     Server getServerInstance(AvroConfiguration configuration, Responder responder) throws Exception;
 
     Transceiver getTransceiverInstance(AvroConfiguration configuration) throws Exception;
+    
+    
 }

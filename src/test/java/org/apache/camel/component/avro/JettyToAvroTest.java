@@ -1,15 +1,12 @@
 package org.apache.camel.component.avro;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.net.URL;
 
 import org.apache.avro.ipc.HttpTransceiver;
 import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificRequestor;
-import org.apache.avro.specific.SpecificResponder;
+import org.apache.avro.ipc.specific.SpecificRequestor;
+import org.apache.avro.ipc.specific.SpecificResponder;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.component.avro.AbstractAvroComponentTest.MockOrderingService;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.dataformat.avro.generated.Confirmation;
 import org.apache.camel.dataformat.avro.generated.Order;

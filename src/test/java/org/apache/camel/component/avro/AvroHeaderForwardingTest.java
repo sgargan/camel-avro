@@ -16,24 +16,14 @@
  */
 package org.apache.camel.component.avro;
 
-import org.apache.avro.ipc.NettyServer;
-import org.apache.avro.ipc.NettyTransceiver;
-import org.apache.avro.ipc.Server;
-import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificResponder;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.dataformat.avro.generated.Confirmation;
 import org.apache.camel.dataformat.avro.generated.Order;
-import org.apache.camel.dataformat.avro.generated.OrderProcessingService;
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.apache.camel.util.ExchangeHelper;
 import org.junit.Test;
-
-import java.io.IOException;
-import java.net.InetSocketAddress;
 
 public class AvroHeaderForwardingTest extends AbstractAvroComponentTest {
 

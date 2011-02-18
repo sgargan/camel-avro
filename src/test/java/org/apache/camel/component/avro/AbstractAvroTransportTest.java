@@ -18,7 +18,7 @@ package org.apache.camel.component.avro;
 
 import org.apache.avro.ipc.Server;
 import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificRequestor;
+import org.apache.avro.ipc.specific.SpecificRequestor;
 import org.apache.camel.Exchange;
 import org.apache.camel.component.mock.MockEndpoint;
 import org.apache.camel.dataformat.avro.generated.Confirmation;

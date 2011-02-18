@@ -23,7 +23,7 @@ import org.apache.avro.ipc.DatagramServer;
 import org.apache.avro.ipc.DatagramTransceiver;
 import org.apache.avro.ipc.Server;
 import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificResponder;
+import org.apache.avro.ipc.specific.SpecificResponder;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.dataformat.avro.generated.OrderProcessingService;
 

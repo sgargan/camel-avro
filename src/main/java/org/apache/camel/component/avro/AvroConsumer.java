@@ -22,6 +22,7 @@ import org.apache.camel.Processor;
 import org.apache.camel.impl.DefaultConsumer;
 
 public class AvroConsumer extends DefaultConsumer {
+    
     private Server server;
     private AvroConfiguration configuration;
 

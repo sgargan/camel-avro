@@ -16,15 +16,19 @@
  */
 package org.apache.camel.component.avro;
 
-import org.apache.avro.Protocol;
-import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificRequestor;
-import org.apache.camel.Exchange;
-import org.apache.camel.impl.DefaultProducer;
-
 import java.io.IOException;
 
+import org.apache.avro.Protocol;
+import org.apache.avro.ipc.Transceiver;
+import org.apache.avro.ipc.specific.SpecificRequestor;
+import org.apache.camel.Exchange;
+import org.apache.camel.impl.DefaultProducer;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 public class AvroLocalProducer extends DefaultProducer {
+    private static final Log log = LogFactory.getLog(AvroLocalProducer.class);
+    
     private CamelRequestor requestor;
     private boolean shouldTransmitHeaders;
     private AvroConfiguration configuration;
@@ -39,7 +43,7 @@ public class AvroLocalProducer extends DefaultProducer {
     protected void doStart() throws Exception {
         super.doStart();
 
-        getTransportFactory().getTransceiverInstance(configuration);
+        transceiver = getTransportFactory().getTransceiverInstance(configuration);
 
         shouldTransmitHeaders = configuration.shouldTransmitHeaders();
         if (shouldTransmitHeaders) {

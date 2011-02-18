@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * <code>AvroCamelForwardingResponder</code> is a
- * {@link AvroForwardingResponder} responder that uses Camel the forwarding
+ * {@link AvroForwardingResponder} responder that uses Camel as the forwarding
  * conduit. It
  */
 public class AvroCamelForwardingResponder extends AvroForwardingResponder {
@@ -37,7 +37,5 @@ public class AvroCamelForwardingResponder extends AvroForwardingResponder {
             throw new AvroRuntimeException(e);
         }
     }
-
-
 
 }

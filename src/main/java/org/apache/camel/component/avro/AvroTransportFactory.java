@@ -1,16 +1,17 @@
 package org.apache.camel.component.avro;
 
-import org.apache.avro.ipc.AvroRemoteException;
-import org.apache.avro.ipc.Responder;
-import org.apache.avro.ipc.Server;
-import org.apache.avro.ipc.Transceiver;
-import org.apache.camel.component.avro.transport.TransportProvider;
-import org.apache.log4j.Logger;
-
 import java.lang.reflect.Modifier;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+
+import org.apache.avro.AvroRemoteException;
+import org.apache.avro.ipc.Responder;
+import org.apache.avro.ipc.Server;
+import org.apache.avro.ipc.Transceiver;
+import org.apache.camel.component.avro.transport.TransportProvider;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * <code>AvroTransportFactory</code> creates instances of Avro {@link Server}s
@@ -22,7 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class AvroTransportFactory {
 
-    private Logger log = Logger.getLogger(getClass());
+    private Logger log = LoggerFactory.getLogger(getClass());
     private Map<String, TransportProvider> providers = new ConcurrentHashMap<String, TransportProvider>();
 
     @SuppressWarnings("all")

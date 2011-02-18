@@ -23,7 +23,7 @@ import org.apache.avro.ipc.Server;
 import org.apache.avro.ipc.SocketServer;
 import org.apache.avro.ipc.SocketTransceiver;
 import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificResponder;
+import org.apache.avro.ipc.specific.SpecificResponder;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.dataformat.avro.generated.OrderProcessingService;
 

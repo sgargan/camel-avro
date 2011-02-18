@@ -16,15 +16,20 @@
  */
 package org.apache.camel.component.avro;
 
-import org.apache.avro.Protocol;
-import org.apache.avro.ipc.Transceiver;
-import org.apache.avro.specific.SpecificRequestor;
-import org.apache.camel.Exchange;
-import org.apache.camel.impl.DefaultProducer;
-
 import java.io.IOException;
 
+import org.apache.avro.Protocol;
+import org.apache.avro.ipc.Transceiver;
+import org.apache.avro.ipc.specific.SpecificRequestor;
+import org.apache.camel.Exchange;
+import org.apache.camel.component.avro.transport.NettyTransportProvider;
+import org.apache.camel.impl.DefaultProducer;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 public class AvroProducer extends DefaultProducer {
+    private static final Log LOG = LogFactory.getLog(NettyTransportProvider.class);
+
     private CamelRequestor requestor;
     private boolean shouldTransmitHeaders;
     private AvroConfiguration configuration;
@@ -86,6 +91,16 @@ public class AvroProducer extends DefaultProducer {
 
         public CamelRequestor(Protocol protocol, Transceiver transceiver) throws IOException {
             super(protocol, transceiver);
+        }
+    }
+    
+    @Override
+    public void stop() throws Exception {
+        super.stop();
+        try {
+            transceiver.close();
+        } catch (Exception e) {
+            LOG.error("Error closing transceiver '"+transceiver.getClass().getSimpleName()+"'");
         }
     }
 

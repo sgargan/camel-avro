@@ -1,3 +1,20 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package org.apache.camel.component.avro;
 
 import java.io.IOException;
@@ -19,7 +36,6 @@ import org.apache.avro.ipc.generic.GenericResponder;
 import org.apache.avro.specific.SpecificDatumReader;
 import org.apache.avro.util.ByteBufferInputStream;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * <code>AvroForwardingResponder</code> is a preprocessing Responder that
@@ -27,17 +43,16 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  * request based on examination of the {@link Protocol} and the request
  * contents. The entire request is forwarded to an upstream handler for
  * processing. Only the data that is required to route the message (if any) need
- * be decoded in this responder, by default this means the {@link Protocol} and the
- * target message.
+ * be decoded in this responder, by default this means the {@link Protocol} and
+ * the target message.
  */
 public abstract class AvroForwardingResponder extends GenericResponder {
-
-    private SpecificDatumReader<HandshakeRequest> handshakeReader = new SpecificDatumReader<HandshakeRequest>(HandshakeRequest.class);
-
+    
     private static final Schema META = Schema.createMap(Schema.create(Schema.Type.BYTES));
-
+    
     private static final GenericDatumReader<Map<CharSequence, ByteBuffer>> META_READER = new GenericDatumReader<Map<CharSequence, ByteBuffer>>(META);
 
+    private SpecificDatumReader<HandshakeRequest> handshakeReader = new SpecificDatumReader<HandshakeRequest>(HandshakeRequest.class);
 
     protected AvroForwardingResponder(Protocol protocol) {
         super(protocol);
@@ -56,33 +71,33 @@ public abstract class AvroForwardingResponder extends GenericResponder {
      * and processing decisions based on the Protocol and buffer contents. The
      * result on the upstream processing is passed back unchanged so the
      * upstream processing must take responsibility for finishing the handshake.
-     *
+     * 
      * @param buffers the buffers constituting the original request being
      *            forwarded
      * @param connection the current client connection
      * @param remote the protocol associated with the connection.
      * @param context containing metadata about the rpc call.
-     *
      * @return the buffers as processed by the upstream responder or handler
      */
     protected abstract List<ByteBuffer> forward(List<ByteBuffer> buffers, Transceiver connection, Protocol remote, RPCContext context);
 
     @Override
     public Object respond(Message message, Object request) throws Exception {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     private Protocol readProtocolFromHandshake(Decoder in, Transceiver connection) throws IOException {
         if (connection != null && connection.isConnected()) {
             return connection.getRemote();
         }
-//        HandshakeRequest request = handshakeReader.read(null, in);
-//        Protocol protocol = ProtocolsCache.getCachedProtocol(request.clientHash);
-//        if (protocol == null && request.clientProtocol != null) {
-//            protocol = Protocol.parse(request.clientProtocol.toString());
-//            ProtocolsCache.register(protocol);
-//        }
-//        connection.setRemote(protocol);
+        // HandshakeRequest request = handshakeReader.read(null, in);
+        // Protocol protocol =
+        // ProtocolsCache.getCachedProtocol(request.clientHash);
+        // if (protocol == null && request.clientProtocol != null) {
+        // protocol = Protocol.parse(request.clientProtocol.toString());
+        // ProtocolsCache.register(protocol);
+        // }
+        // connection.setRemote(protocol);
         return null;
     }
 
@@ -101,7 +116,7 @@ public abstract class AvroForwardingResponder extends GenericResponder {
 
         public MetaDataAccessibleRPCContext(Map<CharSequence, ByteBuffer> callMetadata) {
             this.requestCallMeta = callMetadata;
-            for(CharSequence key : callMetadata.keySet()){
+            for (CharSequence key : callMetadata.keySet()) {
                 System.err.println(key);
             }
         }

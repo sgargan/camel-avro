@@ -39,15 +39,15 @@ public class AvroDatagramTransportTest extends AbstractAvroTransportTest {
     }
 
     public String getEndpointUri(int port) {
-        return "avro:datagram://0.0.0.0:"+port+"/?message=submitOrder&protocol=orderingService";
+        return "avro:datagram://0.0.0.0:" + port + "/?message=submitOrder&protocol=orderingService";
     }
 
     public Transceiver createTransceiver(int port) throws Exception {
         return new DatagramTransceiver(new InetSocketAddress("0.0.0.0", port));
     }
-    
+
     public Server createServer(int port, MockOrderingService mock) throws IOException {
-        return new DatagramServer(new SpecificResponder(OrderProcessingService.PROTOCOL, mock),new InetSocketAddress("0.0.0.0", port));
+        return new DatagramServer(new SpecificResponder(OrderProcessingService.PROTOCOL, mock), new InetSocketAddress("0.0.0.0", port));
     }
 
 }

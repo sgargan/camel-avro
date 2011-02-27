@@ -22,7 +22,7 @@ import org.apache.camel.Processor;
 import org.apache.camel.impl.DefaultConsumer;
 
 public class AvroConsumer extends DefaultConsumer {
-    
+
     private Server server;
     private AvroConfiguration configuration;
 
@@ -39,7 +39,7 @@ public class AvroConsumer extends DefaultConsumer {
         if (configuration.getRPCPlugin() != null) {
             responder.addRPCPlugin(configuration.getRPCPlugin());
         }
-        
+
         server = getTransportFactory().getServerInstance(configuration, responder);
     }
 
@@ -52,11 +52,10 @@ public class AvroConsumer extends DefaultConsumer {
         }
         return responder;
     }
-    
+
     private AvroTransportFactory getTransportFactory() {
         return ((AvroEndpoint)getEndpoint()).getTranportFactory();
     }
-
 
     @Override
     protected void doStop() throws Exception {

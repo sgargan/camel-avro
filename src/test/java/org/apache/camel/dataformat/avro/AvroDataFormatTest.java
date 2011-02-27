@@ -35,7 +35,7 @@ public class AvroDataFormatTest extends CamelTestSupport {
         return new RouteBuilder() {
             @Override
             public void configure() throws Exception {
-                Schema schema = Schema.createUnion(new ArrayList(OrderProcessingService.PROTOCOL.getTypes()));
+                Schema schema = Schema.createUnion(new ArrayList<Schema>(OrderProcessingService.PROTOCOL.getTypes()));
                 AvroDataFormat format = new AvroDataFormat(schema);
                 from("direct:roundtrip").marshal(format).unmarshal(format).to("mock:result");
             }
@@ -46,7 +46,7 @@ public class AvroDataFormatTest extends CamelTestSupport {
     public void testRoundtripConversion() throws Exception {
 
         Order testOrder = createTestOrder();
-        MockEndpoint mock = getMockEndpoint("mock:reverse");
+        MockEndpoint mock = getMockEndpoint("mock:result");
         mock.expectedMessageCount(1);
         mock.message(0).body().isInstanceOf(Order.class);
         mock.message(0).body().equals(testOrder);

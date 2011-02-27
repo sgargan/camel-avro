@@ -29,7 +29,8 @@ import org.apache.camel.Exchange;
 import org.apache.camel.spi.DataFormat;
 
 /**
- * <code>AvroDataFormat</code> is a DataFormat for marshalling to and from Avro encoded Types
+ * <code>AvroDataFormat</code> is a DataFormat for marshalling to and from Avro
+ * encoded Types
  */
 @SuppressWarnings("all")
 public class AvroDataFormat implements DataFormat {
@@ -37,15 +38,14 @@ public class AvroDataFormat implements DataFormat {
     private Schema schema;
 
     public AvroDataFormat(Schema schema) {
-       this.schema = schema;
+        this.schema = schema;
     }
 
     public void marshal(Exchange exchange, Object graph, OutputStream outputStream) throws Exception {
-       new SpecificDatumWriter(schema).write(graph, new BinaryEncoder(outputStream));
+        new SpecificDatumWriter(schema).write(graph, new BinaryEncoder(outputStream));
     }
 
     public Object unmarshal(Exchange exchange, InputStream inputStream) throws Exception {
-        return new SpecificDatumReader().read(null,
-                         DecoderFactory.defaultFactory().createBinaryDecoder(inputStream, null));
+        return new SpecificDatumReader(schema).read(null, DecoderFactory.defaultFactory().createBinaryDecoder(inputStream, null));
     }
 }

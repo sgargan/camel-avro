@@ -27,8 +27,8 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 public class AvroLocalProducer extends DefaultProducer {
-    private static final Log log = LogFactory.getLog(AvroLocalProducer.class);
-    
+    private static final Log LOG = LogFactory.getLog(AvroLocalProducer.class);
+
     private CamelRequestor requestor;
     private boolean shouldTransmitHeaders;
     private AvroConfiguration configuration;
@@ -51,9 +51,15 @@ public class AvroLocalProducer extends DefaultProducer {
         }
     }
 
+    @Override
+    protected void doStop() throws Exception {
+        super.doStop();
+        transceiver.close();
+    }
+
     @SuppressWarnings("all")
     public void process(Exchange exchange) throws Exception {
-        
+
     }
 
     private String getMessageName(Exchange exchange) {
@@ -62,7 +68,7 @@ public class AvroLocalProducer extends DefaultProducer {
             messageName = configuration.getMessageName();
         }
         if (messageName == null) {
-            log.warn("No target message operation has been specified. If the receiver is an avro endpoint this remote call will fail");
+            LOG.warn("No target message operation has been specified. If the receiver is an avro endpoint this remote call will fail");
         }
         return messageName;
     }

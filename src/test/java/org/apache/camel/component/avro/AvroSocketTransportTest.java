@@ -37,15 +37,15 @@ public class AvroSocketTransportTest extends AbstractAvroTransportTest {
             }
         };
     }
-    
+
     public String getEndpointUri(int port) {
-        return "avro:socket://0.0.0.0:"+port+"/?message=submitOrder&protocol=orderingService";
+        return "avro:socket://0.0.0.0:" + port + "/?message=submitOrder&protocol=orderingService";
     }
 
     public Transceiver createTransceiver(int port) throws Exception {
         return new SocketTransceiver(new InetSocketAddress("0.0.0.0", port));
     }
-    
+
     public Server createServer(int port, MockOrderingService mock) throws IOException {
         return new SocketServer(new SpecificResponder(OrderProcessingService.PROTOCOL, mock), new InetSocketAddress("0.0.0.0", port));
     }

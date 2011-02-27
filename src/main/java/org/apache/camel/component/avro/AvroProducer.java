@@ -93,14 +93,14 @@ public class AvroProducer extends DefaultProducer {
             super(protocol, transceiver);
         }
     }
-    
+
     @Override
     public void stop() throws Exception {
         super.stop();
         try {
             transceiver.close();
         } catch (Exception e) {
-            LOG.error("Error closing transceiver '"+transceiver.getClass().getSimpleName()+"'");
+            LOG.error("Error closing transceiver '" + transceiver.getClass().getSimpleName() + "'");
         }
     }
 

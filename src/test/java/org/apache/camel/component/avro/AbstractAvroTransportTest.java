@@ -28,13 +28,13 @@ import org.apache.camel.util.ExchangeHelper;
 import org.junit.Test;
 
 public abstract class AbstractAvroTransportTest extends AbstractAvroComponentTest {
-    
-    public abstract String getEndpointUri(int port) ;
-    
-    public abstract Transceiver createTransceiver(int port) throws Exception ;
-    
+
+    public abstract String getEndpointUri(int port);
+
+    public abstract Transceiver createTransceiver(int port) throws Exception;
+
     public abstract Server createServer(int port, MockOrderingService mock) throws Exception;
-    
+
     @Test
     public void avroClientToCamelServer() throws Exception {
         Order order = createOrder();
@@ -45,7 +45,7 @@ public abstract class AbstractAvroTransportTest extends AbstractAvroComponentTes
         try {
             t = createTransceiver(4567);
             OrderProcessingService service = SpecificRequestor.getClient(OrderProcessingService.class, t);
-            for(int x = 0 ; x < 5; x++){
+            for (int x = 0; x < 5; x++) {
                 Confirmation c = service.submitOrder(order);
                 validateConfirmationCorrectlyRecieved(order, c);
             }
@@ -77,15 +77,16 @@ public abstract class AbstractAvroTransportTest extends AbstractAvroComponentTes
             server.start();
 
             Order order = createOrder();
-            Exchange e = createExchangeWithBody(order);            
+            Exchange e = createExchangeWithBody(order);
             template.send(getEndpointUri(4568), e);
 
             Confirmation c = ExchangeHelper.getMandatoryOutBody(e, Confirmation.class);
             validateConfirmationCorrectlyRecieved(order, c);
 
         } finally {
-            if(server != null)
+            if (server != null) {
                 server.close();
+            }
         }
     }
 }

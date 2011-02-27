@@ -1,3 +1,20 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package org.apache.camel.component.avro.transport;
 
 import java.io.IOException;
@@ -28,7 +45,7 @@ public class LocalTransportProvider implements TransportProvider {
         // the local server uses the hostname/address from the uri to
         // correlate the transport between the producer and consumer
         if (LOG.isDebugEnabled()) {
-            LOG.debug("Creating local transceiver for '"+configuration.getHost()+"'");
+            LOG.debug("Creating local transceiver for '" + configuration.getHost() + "'");
         }
         LocalTrancevierCache.storeTranceiver(configuration.getHost(), responder);
         return null;
@@ -36,14 +53,16 @@ public class LocalTransportProvider implements TransportProvider {
 
     public Transceiver getTransceiverInstance(AvroConfiguration configuration) throws Exception {
         if (LOG.isDebugEnabled()) {
-            LOG.debug("Getting local transceiver for '"+configuration.getHost()+"'");
+            LOG.debug("Getting local transceiver for '" + configuration.getHost() + "'");
         }
         return LocalTrancevierCache.getTransceiver(configuration.getHost());
     }
 
-    private static class LocalTrancevierCache {
+    private static final class LocalTrancevierCache {
         private static Map<String, DelegatingLocalTransceiver> transcievers = new ConcurrentHashMap<String, DelegatingLocalTransceiver>();
 
+        private LocalTrancevierCache() { }
+        
         public static void storeTranceiver(String host, Responder responder) {
             if (responder != null) {
                 DelegatingLocalTransceiver transceiver = getDelegate(host);

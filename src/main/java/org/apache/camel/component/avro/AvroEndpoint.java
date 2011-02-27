@@ -29,8 +29,7 @@ public class AvroEndpoint extends DefaultEndpoint {
 
     private AvroTransportFactory transportFactory;
 
-    public AvroEndpoint(String endpointUri, AvroComponent component, AvroTransportFactory transportFactory, 
-                        AvroConfiguration configuration) {
+    public AvroEndpoint(String endpointUri, AvroComponent component, AvroTransportFactory transportFactory, AvroConfiguration configuration) {
         super(endpointUri, component);
         this.configuration = configuration;
         this.transportFactory = transportFactory;

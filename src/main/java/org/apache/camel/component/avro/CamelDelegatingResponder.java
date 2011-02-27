@@ -1,15 +1,32 @@
-package org.apache.camel.component.avro;
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-import org.apache.avro.Protocol;
-import org.apache.avro.ipc.Responder;
-import org.apache.avro.ipc.Transceiver;
-import org.apache.camel.InOut;
+package org.apache.camel.component.avro;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
 import java.util.List;
+
+import org.apache.avro.Protocol;
+import org.apache.avro.ipc.Responder;
+import org.apache.avro.ipc.Transceiver;
+import org.apache.camel.InOut;
 
 public class CamelDelegatingResponder {
 
@@ -25,7 +42,6 @@ public class CamelDelegatingResponder {
     public CamelDelegatingResponder(Responder responder) {
         this(responder, false);
     }
-
 
     public void setResponder(Responder responder) {
         this.responder = responder;
@@ -43,19 +59,17 @@ public class CamelDelegatingResponder {
         return baos.toByteArray();
     }
 
-    private void writeBuffers(List<ByteBuffer> buffers, OutputStream out)
-            throws IOException {
+    private void writeBuffers(List<ByteBuffer> buffers, OutputStream out) throws IOException {
         for (ByteBuffer buffer : buffers) {
             buffer.position(0);
-            writeLength(buffer.limit(), out);           // length-prefix
+            writeLength(buffer.limit(), out); // length-prefix
             out.write(buffer.array(), buffer.position(), buffer.remaining());
             buffer.position(buffer.limit());
         }
-        writeLength(0, out);                          // null-terminate
+        writeLength(0, out); // null-terminate
     }
 
-    private static void writeLength(int length, OutputStream out)
-            throws IOException {
+    private static void writeLength(int length, OutputStream out) throws IOException {
         System.out.println(length);
         out.write(0xff & (length >>> 24));
         out.write(0xff & (length >>> 16));

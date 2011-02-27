@@ -47,7 +47,7 @@ public class AvroHeaderForwardingTest extends AbstractAvroComponentTest {
         template.send("avro:netty://0.0.0.0:4567/?message=submitOrder&protocol=orderingService&forwardHeaders=true", e);
 
         Confirmation c = ExchangeHelper.getMandatoryOutBody(e, Confirmation.class);
-        assertNotNull(e.getOut().getHeader("that header"));
+        assertNotNull(e.getOut().getHeader("this header"));
         validateConfirmationCorrectlyRecieved(order, c);
         validateHeaderTransmission(mock, e);
     }
@@ -63,8 +63,7 @@ public class AvroHeaderForwardingTest extends AbstractAvroComponentTest {
     }
 
     private void validateHeaderTransmission(MockEndpoint mock, Exchange e) {
-        assertNotNull( mock.assertExchangeReceived(0).getIn().getHeader("this header") );
+        assertNotNull(mock.assertExchangeReceived(0).getIn().getHeader("this header"));
     }
-
 
 }

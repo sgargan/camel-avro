@@ -41,7 +41,7 @@ public abstract class AbstractAvroComponentTest extends CamelTestSupport {
         reg.bind("orderingServiceImpl", new MockOrderingService());
         return reg;
     }
-    
+
     protected static Order createOrder() {
         return new OrderBuilder().addItems(new ItemBuilder().build()).build();
     }

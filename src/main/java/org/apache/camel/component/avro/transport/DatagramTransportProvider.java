@@ -1,22 +1,43 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one or more
+ * contributor license agreements.  See the NOTICE file distributed with
+ * this work for additional information regarding copyright ownership.
+ * The ASF licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package org.apache.camel.component.avro.transport;
 
-import org.apache.avro.ipc.*;
+import java.net.InetSocketAddress;
+
+import org.apache.avro.ipc.DatagramServer;
+import org.apache.avro.ipc.DatagramTransceiver;
+import org.apache.avro.ipc.Responder;
+import org.apache.avro.ipc.Server;
+import org.apache.avro.ipc.Transceiver;
 import org.apache.camel.component.avro.AvroConfiguration;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
-import java.net.InetSocketAddress;
 
 public class DatagramTransportProvider implements TransportProvider {
 
     private static final Log LOG = LogFactory.getLog(DatagramTransportProvider.class);
     private Server server;
-    
+
     public String getProviderType() {
         return "datagram";
     }
 
-    public Server getServerInstance(AvroConfiguration configuration, Responder responder) throws Exception  {
+    public Server getServerInstance(AvroConfiguration configuration, Responder responder) throws Exception {
         InetSocketAddress endpointAddress = configuration.getEndpointAddress();
         if (LOG.isDebugEnabled()) {
             LOG.debug("Creating Datagram Server on " + endpointAddress);
@@ -29,10 +50,9 @@ public class DatagramTransportProvider implements TransportProvider {
     public Transceiver getTransceiverInstance(AvroConfiguration configuration) throws Exception {
         InetSocketAddress endpointAddress = configuration.getEndpointAddress();
         if (LOG.isDebugEnabled()) {
-            LOG.debug("Creating Datagram Transceiver on '" + endpointAddress+"'");
+            LOG.debug("Creating Datagram Transceiver on '" + endpointAddress + "'");
         }
         return new DatagramTransceiver(endpointAddress);
     }
-    
-    
+
 }

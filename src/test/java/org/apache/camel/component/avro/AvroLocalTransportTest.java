@@ -32,6 +32,7 @@ public class AvroLocalTransportTest extends AbstractAvroTransportTest {
             }
         };
     }
+
     public String getEndpointUri(int port) {
         return "avro:local://localOrdering/?message=submitOrder&protocol=orderingService";
     }
@@ -39,16 +40,16 @@ public class AvroLocalTransportTest extends AbstractAvroTransportTest {
     public Transceiver createTransceiver(int port) {
         return null;
     }
-    
+
     public Server createServer(int port, MockOrderingService mock) throws IOException {
         return null;
     }
-    
+
     @Override
     public void camelClientToAvroServer() throws Exception {
         // not really applicable
     }
-    
+
     @Override
     public void avroClientToCamelServer() throws Exception {
         // not really applicable

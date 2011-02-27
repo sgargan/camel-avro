@@ -39,7 +39,7 @@ public class AvroNettyTransportTest extends AbstractAvroTransportTest {
     }
 
     public String getEndpointUri(int port) {
-        return "avro:netty://0.0.0.0:"+port+"/?message=submitOrder&protocol=orderingService";
+        return "avro:netty://0.0.0.0:" + port + "/?message=submitOrder&protocol=orderingService";
     }
 
     public Transceiver createTransceiver(int port) throws Exception {

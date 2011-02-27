@@ -16,22 +16,22 @@
  */
 package org.apache.camel.component.avro;
 
-import org.apache.avro.Protocol;
-import org.apache.camel.Endpoint;
-import org.apache.camel.component.avro.transport.TransportProvider;
-import org.apache.camel.impl.DefaultComponent;
-
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.avro.Protocol;
+import org.apache.camel.Endpoint;
+import org.apache.camel.component.avro.transport.TransportProvider;
+import org.apache.camel.impl.DefaultComponent;
+
 public class AvroComponent extends DefaultComponent {
+    
+    private static final String TRANSPORT_PACKAGE = "org.apache.camel.component.avro.transport";
 
     private AvroTransportFactory transportFactory;
-
-    private final static String transportPackage = "org.apache.camel.component.avro.transport";
 
     private List<String> transportPackages = new ArrayList<String>();
 
@@ -41,7 +41,8 @@ public class AvroComponent extends DefaultComponent {
         AvroConfiguration configuration = new AvroConfiguration();
         configuration.setProtocol(resolveAndRemoveReferenceParameter(parameters, "protocol", Protocol.class));
         configuration.setMessageName(getAndRemoveParameter(parameters, "message", String.class));
-        //configuration.setShouldForwardRequest(getAndRemoveParameter(parameters, "shouldForwardRequest", Boolean.class, false));
+        // configuration.setShouldForwardRequest(getAndRemoveParameter(parameters,
+        // "shouldForwardRequest", Boolean.class, false));
         configuration.setShouldTransmitHeaders(getAndRemoveParameter(parameters, "forwardHeaders", Boolean.class, false));
 
         URI serverUri = new URI(remaining);
@@ -58,13 +59,12 @@ public class AvroComponent extends DefaultComponent {
     protected void doStart() throws Exception {
         super.doStart();
 
-        transportPackages.add(transportPackage);
-        Set<Class<?>> providers = getCamelContext().getPackageScanClassResolver().findImplementations(
-                TransportProvider.class, transportPackages.toArray(new String[transportPackages.size()]));
+        transportPackages.add(TRANSPORT_PACKAGE);
+        Set<Class<?>> providers = getCamelContext().getPackageScanClassResolver().findImplementations(TransportProvider.class,
+                                                                                                      transportPackages.toArray(new String[transportPackages.size()]));
 
         if (providers.isEmpty()) {
-            throw new IllegalStateException("No transport providers were loaded from the" +
-                    " configured transport packages '" + transportPackages + "'");
+            throw new IllegalStateException("No transport providers were loaded from the" + " configured transport packages '" + transportPackages + "'");
         }
         this.transportFactory = new AvroTransportFactory(providers);
 

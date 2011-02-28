@@ -1,9 +1,6 @@
 Avro component module for Apache Camel.
 
-This component integrates Apache Avro (http://avro.apache.org) with Apache Camel. It wraps Avro's 
-existing efficient IPC mechanisms into Camel Producers and Consumers allowing creation of routes via Camel's powerful
-routing DSL. Avro's simple and efficient serialization compliments Camel perfectly. Together they a compelling toolset for 
-creating high throughput, flexible Service Oriented and Domain Event-driven Architectures.
+This component integrates Apache Avro (http://avro.apache.org) with Apache Camel. It wraps Avro's existing efficient IPC mechanisms into Camel Producers and Consumers allowing creation of routes via Camel's powerful routing DSL. Avro's simple and efficient serialization compliments Camel perfectly. Together they a compelling toolset for creating high throughput, flexible Service Oriented and Domain Event-driven Architectures.
 
 Building
 ---------
@@ -28,19 +25,13 @@ Run maven.
 
 Usage
 ------
-Like all Camel components, the avro component uses a specific url prefix in the DSL to invoke the component and create routes; 
-The prefix in this case is 'avro'. Typically when creating a route the next part of the url specifies the transport to be used for example
-the following DSL snippet will create a consumer that stands up a Netty based Avro server that will forward the payload of each request it
-receives onto the rest of the route. The format of the payload is defined by an associated Avro protocol that should be passed to the 
-route as a parameter.
+Like all Camel components, the Avro component uses a specific url prefix in the DSL to invoke the component and create routes; The prefix in this case is 'avro'. Typically when creating a route the next part of the url specifies the transport to be used for example the following DSL snippet will create a consumer that stands up a Netty based Avro server that will forward the payload of each request it receives onto the rest of the route. The format of the payload is defined by an associated Avro protocol that should be passed to the route as a parameter.
 
 from("avro:netty://0.0.0.0:4567/?protocol=orderingService").to("direct:avro-payload-processing")
 
 Any Avro headers in the request can be forwarded as headers in the exchange message by adding 'forwardHeaders=true' as a url parameter.
 
-Most of Avro's transports are available with a notable exception. Due to incompatibilities between the versions of Jetty used by Camel
-and Hadoop, Avro's http transport has not yet been implemented. You can still use the component via http by fronting it with Camel's 
-Jetty component and an example of this can be found in the unit tests.
+Most of Avro's transports are available with a notable exception. Due to incompatibilities between the versions of Jetty used by Camel and Hadoop, Avro's http transport has not yet been implemented. You can still use the component via http by fronting it with Camel's Jetty component and an example of this can be found in the unit tests.
 
 I'm working on documentation for the Camel wiki, but in the meantime, the unit tests provide examples of using each of the various transports.
 

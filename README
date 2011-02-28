@@ -5,9 +5,7 @@ This component integrates Apache Avro (http://avro.apache.org) with Apache Camel
 Building
 ---------
 
-The current implementation is built against the 1.5.0-SNAPSHOT of Avro and the 2.7.0-SNAPSHOT version of Camel. Avro 1.5 is 
-about to go gold and as soon as it does I will create a branch for this and migrate to the 1.5.1-SNAPSHOT. You may need to 
-build Avro and Camel in order for this build to resolve correctly. Both are available here on github.
+The current implementation is built against the 1.5.0-SNAPSHOT of Avro and the 2.7.0-SNAPSHOT version of Camel. Avro 1.5 is about to go gold and as soon as it does I will create a branch for this and migrate to the 1.5.1-SNAPSHOT. You may need to build Avro and Camel in order for this build to resolve correctly. Both are available here on github.
 
 https://github.com/apache/avro.git
 https://github.com/apache/camel.git
@@ -35,4 +33,4 @@ Most of Avro's transports are available with a notable exception. Due to incompa
 
 I'm working on documentation for the Camel wiki, but in the meantime, the unit tests provide examples of using each of the various transports.
 
-Give it whirl, kick the tires and tell me how it goes for you any and all feedback is appreciated.
+Give it whirl, kick the tires and tell me how it goes for you. All feedback is greatly appreciated.
